@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+
+    function Ninja(name){
+        this.name = name;
+        this.health = 100;
+        this.speed = 3;
+        this.strength = 3;
+
+        //just prints the ninja's name
+        this.sayName = function() {
+            console.log("My name is " + this.name)
+        }
+        
+        //just a function that adds 10 to the health when it's called
+        this.drinkSake = function() {
+            this.health += 10;
+        }
+
+        //just a function that displays the stat of the ninja
+        this.showStats = function() {
+            console.log("Name: " + this.name + ", Health: " + this.health + ", Speed: " + this.speed + ", Strength: " + this.strength)
+        }
+    }//end of Ninja 
+    
+    //created new Ninja
+    var ninja1 = new Ninja("daryll")
+    ninja1.sayName();
+    ninja1.showStats();
+    ninja1.drinkSake();
+    ninja1.showStats();
+
+    </script>
+
+</head>
+<body>
+    
+
+</body>
+</html>
